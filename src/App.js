@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import Cell from './Cell';
+import Board from './Board';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w3-margin">
+      <h1 className="w3-margin">Lights out</h1>
+      <div className="w3-center">
+        <Board  />
+      </div>
     </div>
   );
 }
